@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Pinyon+Script&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            .pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  
+}
+
+            background-color: #f2f2f2;
+
+        }
+
+        form {
+            width: 35%;
+            border: 1px solid #cccccc;
+            padding: 12px;
+            color: #800000;
+            margin: auto;
+
+        }
+
+        .form-label {
+            display: block;
+            /* stretch the whole width */
+        }
+
+        .input-full-width {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            /* stretch the whole width */
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form inputs text, email, password, phone, date, gender, radio button, check box, select -->
+    <form action="">
+
+        <label class="form-label" for="full name">First and Last name</label>
+        <input class="input-full-width" type="text" name="Full name" id="full name:" placeholder="full name" required>
+
+        <label class="form-label" for="Email">Email:</label>
+        <input class="input-full-width" type="email" name="Email" id="Email:" placeholder="email address" required>
+
+        <label class="form-label" for="password">Password</label>
+        <input class="input-full-width" type="password" name="Password" id="Password" placeholder="**********" required>
+
+        <label class="form-label" for="dob">Date of Birth</label>
+        <input class="input-full-width" type="date" name="dob" id="dob" required min="1990-01-01" max="2003-12-31">
+
+        <label class="form-label" for="phone">Phone Number:</label>
+        <input class="input-full-width" type="tel" name="phone" id="Phone" placeholder="07000000000">
+
+
+        <label class="form-label" for="Gender">Gender:</label>
+
+        <label class="form-label" for="Female">Female:</label>
+        <input type="radio" name="Gender" id="Female" value="F">
+    
+
+        <label class="form-label" for="Male">Male:</label>
+        <input type="radio" name="Gender" id="Male" value="M">
+
+        <br>
+        <p>Select favorite sport(s):</p>
+
+        <input type="checkbox" name="soccer" id="soccer" value="soccer">
+        <label class="form-label" for="soccer">soccer</label>
+
+        <br>
+
+        <input type="checkbox" name="tennis" id="tennis" value="tennis">
+        <label class="form-label" for="tennis">tennis</label>
+
+        <br>
+
+        <input type="checkbox" name="rugby" id="rugby" value="rugby">
+        <label class="form-label" for="rugby">rugby</label>
+
+        <br>
+
+        <label class="form-label" for="County">County</label>
+        <select class="input-full-width" name="County" id="County">
+
+            <br>
+
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Kiambu">Kiambu</option>
+            <option value="Nairobi">Nairobi</option>
+
+        </select>
+
+        <!--slider input-->
+
+        <button type="submit">Submit</button>
+
+
+
+    </form>
+
+</body>
+
+</html>
