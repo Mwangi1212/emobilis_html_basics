@@ -42,9 +42,75 @@ body {
     background-color: var(--brand-green) !important;
     border-color: var(--brand-green) !important;
     border-radius: 0;
+    transition: all 2s;
 }
 
 .btn-success:hover{
     background-color: #064324 !important;
     border-color: #064324 !important;
+}
+
+.hero{
+    padding:3.5rem;
+    background: linear-gradient(120deg, #a9a9a9, #f4f8f7);
+}
+
+.top-title{
+    color: var(--brand-green);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.hero h1{
+
+    line-height: 1.2;
+}
+
+.section-heading h2{
+    margin-bottom: 0.4rem;
+}
+
+.card{
+    border-color: #6d6969;
+    transition: transform0.2s ease box-shadow 0.2s ease; 
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 5px -8px 14px -2px rgba(0,0,0,0.61);
+-webkit-box-shadow: 5px -8px 14px -2px rgba(0,0,0,0.61);
+-moz-box-shadow: 5px -8px 14px -2px rgba(0,0,0,0.61);
+    /* box-shadow generator */
+}
+
+.about-section{
+    background-color: var(--soft-bg);
+}
+
+.about-section i{
+    color: var(--brand-green);
+    font-size: 2.5rem;
+}
+
+.about-section p{
+    max-width: 600px;
+    margin:auto;
+}
+
+.footer{
+    background-color: var(--brand-dark);
+    color: #fff;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: var(--brand-green);
+    text-decoration: underline;
+}
+.copyright{
+    background-color: #0e1a26;
 }
