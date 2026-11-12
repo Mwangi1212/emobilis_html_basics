@@ -70,9 +70,12 @@ body {
     margin-bottom: 0.4rem;
 }
 
+
+
 .card{
     border-color: #6d6969;
     transition: transform0.2s ease box-shadow 0.2s ease; 
+    
 }
 
 .card:hover{
